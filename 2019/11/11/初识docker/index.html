@@ -5,16 +5,16 @@
   
 
   
-  <title>Hello World | happylamb</title>
+  <title>初识docker | happylamb</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="我的第一篇博客">
+  <meta name="description" content="1.拉取镜像1[root@localhost ~]# docker pull tomcat  2.根据镜像启动容器1[root@localhost ~]# docker run --name mytomcat -d -p 8080:8080  -d: 后台运行 -p:  端口映射（主机端口：容器端口） 3.查看运行中的容器1[root@localhost ~]# docker ps  4.停止运行">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;03&#x2F;hello-world&#x2F;index.html">
+<meta property="og:title" content="初识docker">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;11&#x2F;%E5%88%9D%E8%AF%86docker&#x2F;index.html">
 <meta property="og:site_name" content="happylamb">
-<meta property="og:description" content="我的第一篇博客">
+<meta property="og:description" content="1.拉取镜像1[root@localhost ~]# docker pull tomcat  2.根据镜像启动容器1[root@localhost ~]# docker run --name mytomcat -d -p 8080:8080  -d: 后台运行 -p:  端口映射（主机端口：容器端口） 3.查看运行中的容器1[root@localhost ~]# docker ps  4.停止运行">
 <meta property="og:locale" content="cn">
-<meta property="og:updated_time" content="2019-11-03T13:39:51.542Z">
+<meta property="og:updated_time" content="2019-11-11T15:32:21.296Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="happylamb" type="application/atom+xml">
@@ -62,10 +62,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-初识docker" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/11/03/hello-world/" class="article-date">
-  <time datetime="2019-11-03T12:32:04.764Z" itemprop="datePublished">2019-11-03</time>
+    <a href="/2019/11/11/%E5%88%9D%E8%AF%86docker/" class="article-date">
+  <time datetime="2019-11-11T15:20:26.900Z" itemprop="datePublished">2019-11-11</time>
 </a>
     
   </div>
@@ -76,7 +76,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      初识docker
     </h1>
   
 
@@ -84,12 +84,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>我的第一篇博客</p>
+        <h3 id="1-拉取镜像"><a href="#1-拉取镜像" class="headerlink" title="1.拉取镜像"></a>1.拉取镜像</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# docker pull tomcat</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-根据镜像启动容器"><a href="#2-根据镜像启动容器" class="headerlink" title="2.根据镜像启动容器"></a>2.根据镜像启动容器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# docker run --name mytomcat -d -p 8080:8080</span><br></pre></td></tr></table></figure>
+
+<p><code>-d:</code> 后台运行</p>
+<p><code>-p:</code>  端口映射（主机端口：容器端口）</p>
+<h3 id="3-查看运行中的容器"><a href="#3-查看运行中的容器" class="headerlink" title="3.查看运行中的容器"></a>3.查看运行中的容器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# docker ps</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-停止运行中的容器"><a href="#4-停止运行中的容器" class="headerlink" title="4.停止运行中的容器"></a>4.停止运行中的容器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# docker stop 容器id</span><br></pre></td></tr></table></figure>
+
+
+
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/03/hello-world/" data-id="ck2ul1cm700016cs0e4vzhcnx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/11/%E5%88%9D%E8%AF%86docker/" data-id="ck2ul59230000lks0ghfi84k7" class="article-share-link">Share</a>
       
       
     </footer>
@@ -98,15 +109,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/11/03/aaa/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Hello World
-        
-      </div>
-    </a>
   
+    <a href="/2019/11/03/aaa/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
 </nav>
 
